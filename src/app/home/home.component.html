@@ -1,3 +1,9 @@
-<p>
-  home works!
-</p>
+<!-- <h1 [ngClass]="{
+  'gray': homestyle,
+   'large':!homestyle}">Home Page</h1> -->
+<h1 [ngStyle]="{
+    'color': homestyle ? 'gray':'black',
+    'font-size': !homestyle ? '1em': '4em'}">Home Page</h1>  
+
+
+<button (click)="firstclick()">Click Button</button>
