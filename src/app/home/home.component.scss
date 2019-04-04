@@ -1,7 +1,27 @@
-.gray {
-    color: gray;
-}
+ul {
+    list-style-type: none;
+    margin: 0;padding: 0;
 
-.large {
-    font-size: 2em;
+
+    li {
+
+        background: rgba(181, 181, 184, 0.822);
+        padding: 2em;
+        border-radius: 4px;
+        margin-bottom: 7px;
+        display: grid;
+        grid-template-columns: 60px auto;
+        
+        p{
+            font-weight: bold;
+            margin-left: 70px;
+            margin-top: 45px;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 200%
+        }
+
+    }
 }
