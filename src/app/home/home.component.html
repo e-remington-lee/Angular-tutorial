@@ -1,9 +1,8 @@
-<!-- <h1 [ngClass]="{
-  'gray': homestyle,
-   'large':!homestyle}">Home Page</h1> -->
-<h1 [ngStyle]="{
-    'color': homestyle ? 'gray':'black',
-    'font-size': !homestyle ? '1em': '4em'}">Home Page</h1>  
+<h1>Home</h1>
 
-
-<button (click)="firstclick()">Click Button</button>
+<ul *ngIf='users'>
+  <li *ngFor='let x of users.data'>
+    <img [src]='x.avatar'>
+    <p> {{x.first_name}} {{x.last_name}}</p>
+  </li>
+</ul>
